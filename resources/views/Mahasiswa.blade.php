@@ -48,27 +48,19 @@
     </tr>
       </thead>
       <tbody>
+        <?php $nilai_awal = 0; ?>
+        @while ($nilai_awal < $jumlah)
+
         <tr>
-          <td>127</td>
-          <td>Bubu</td>
+          <td>{{$npm [$nilai_awal]}}</td>
+          <td>{{$Nama [$nilai_awal]}}</td>
           <td>Laki Laki</td>
           <td>06 Juni 2000</td>
           <td>Seoul</td>
         </tr>
-        <tr>
-          <td>128</td>
-          <td>Bubi</td>
-          <td>Laki Laki</td>
-          <td>07 Juni 2000</td>
-          <td>Busan</td>
-        </tr>
-        <tr>
-          <td>129</td>
-          <td>Bubo</td>
-          <td>Laki Laki</td>
-          <td>08 Juni 2000</td>
-          <td>Jeju</td>
-        </tr>
+
+         <?php $nilai_awal++ ?>   
+        @endwhile
       </tbody>
     </table>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

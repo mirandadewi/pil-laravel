@@ -40,7 +40,10 @@ Route::get('about', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    $npm =[123,124,125];
+    $Nama =['Bubu', 'Bubi' ,'Bubo'];
+    $jumlah = count($npm);
+    return view('mahasiswa', compact('npm','Nama', 'jumlah'));
 });
 
 Route::get('profile', function () {
@@ -66,14 +69,14 @@ Route::get('table', function () {
     ]);
  });
 
- Route::get('array', function () {
-    // //infinitife loop
-    // $nilai_awal =1;
-    // while ($nilai_awal <=5) {
-    //   echo 'Hello Laravel' . $nilai_awal. 'x<br>';
-    //   $nilai_awal++;
-    // }
-    for ($i = 0; $i < 10; $i++) {
-        echo 'Hello Laravel' . $i . 'x<br>';
-    }
-});
+//  Route::get('array', function () {
+//     // //infinitife loop
+//     // $nilai_awal =1;
+//     // while ($nilai_awal <=5) {
+//     //   echo 'Hello Laravel' . $nilai_awal. 'x<br>';
+//     //   $nilai_awal++;
+//     // }
+//     for ($i = 0; $i < 10; $i++) {
+//         echo 'Hello Laravel' . $i . 'x<br>';
+//     }
+// });
