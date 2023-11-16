@@ -65,18 +65,3 @@ Route::get('profile', function () {
 //         'count' => $jumlah
 //     ]);
 // });
-
-Route::get('tabel', function () {
-    $kode_produk = ['BRG001', 'BRG002'];
-    $Nama_produk = ['Pena', 'Buku'];
-    $Jenis_produk =['Alat Tulis'];
-    $Harga_produk = ['20000','10000'];
-    $jumlah = count($Nama_produk);
-    return view('pertemuan5/tabel')->with([
-        'Nama' => $kode_produk,
-        'NPM' => $Nama_produk,
-        'jenis_kelamin' => $Jenis_produk,
-        'Harga Produk' => $Harga_produk,
-        'count' => $jumlah
-    ]);
-});
