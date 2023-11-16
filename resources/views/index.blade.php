@@ -34,7 +34,7 @@
   </div>
 </nav>
     <div class="container">
-    <h1>halaman Home</h1>
+    <h1>Halaman Home</h1>
     {{-- <div class= "row text-center" >
       <div class="col-sm-3">Kolom a</div>
       <div class="col-sm-3">Kolom b</div>

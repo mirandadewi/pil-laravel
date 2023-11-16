@@ -49,19 +49,19 @@ Route::get('profile', function () {
     return view('profile')->with( 'nama' , $nama);
 });
 
-// Route::get('table', function () {
-//     $Nama = ['Haechan', 'Ruhi', 'Bunga'];
-//     $NPM = ['127', '098', '192'];
-//     $jenis_kelamin =['Laki Laki', 'Perempuan', 'Perempuan'];
-//     $tanggal_lahir =['6 juni 2003', '5 oktober 2002', '3 februari 2001'];
-//     $alamat =['Seoul', 'Jogja', 'Bali'];
-//     $jumlah = count($alamat);
-//     return view('pertemuan5/tabel')->with([
-//         'Nama' => $Nama,
-//         'NPM' => $NPM,
-//         'jenis_kelamin' => $jenis_kelamin,
-//         'tanggal_lahir' => $tanggal_lahir,
-//         'alamat' => $alamat,
-//         'count' => $jumlah
-//     ]);
-// });
+Route::get('table', function () {
+    $Nama = ['Haechan', 'Ruhi', 'Bunga'];
+    $NPM = ['127', '098', '192'];
+    $jenis_kelamin =['Laki Laki', 'Perempuan', 'Perempuan'];
+    $tanggal_lahir =['6 juni 2003', '5 oktober 2002', '3 februari 2001'];
+    $alamat =['Seoul', 'Jogja', 'Bali'];
+    $jumlah = count($alamat);
+    return view('pertemuan5/tabel')->with([
+        'Nama' => $Nama,
+        'NPM' => $NPM,
+        'jenis_kelamin' => $jenis_kelamin,
+        'tanggal_lahir' => $tanggal_lahir,
+        'alamat' => $alamat,
+        'count' => $jumlah
+    ]);
+ });
