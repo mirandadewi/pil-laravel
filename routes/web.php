@@ -65,3 +65,13 @@ Route::get('table', function () {
         'count' => $jumlah
     ]);
  });
+
+ Route::get('array', function () {
+    //infinitife loop
+    $nilai_awal =1;
+    while ($nilai_awal <=5) {
+      echo 'Hello Laravel' . $nilai_awal. 'x<br>';
+      $nilai_awal++;
+    }
+
+});
