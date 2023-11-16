@@ -48,21 +48,17 @@
     </tr>
       </thead>
       <tbody>
-        <?php $nilai_awal = 0; ?>
-        @while ($nilai_awal < $jumlah)
-
-        <tr>
-          <td>{{$npm [$nilai_awal]}}</td>
-          <td>{{$Nama [$nilai_awal]}}</td>
-          <td>Laki Laki</td>
-          <td>06 Juni 2000</td>
-          <td>Seoul</td>
-        </tr>
-
-         <?php $nilai_awal++ ?>   
-        @endwhile
-      </tbody>
-    </table>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-</html>
+      
+    @for ($i = 0; $i < $jumlah; $i++)
+    <tr>
+      <td>{{$npm [$i]}}</td>
+      <td>{{$nama [$i]}}</td>
+      <td>Laki Laki</td>
+      <td>Seoul</td>
+    </tr>
+    @endfor
+  </tbody>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  </html>

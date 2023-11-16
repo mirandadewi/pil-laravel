@@ -41,9 +41,9 @@ Route::get('about', function () {
 
 Route::get('mahasiswa', function () {
     $npm =[123,124,125];
-    $Nama =['Bubu', 'Bubi' ,'Bubo'];
+    $nama =['Bubu', 'Bubi' ,'Bubo'];
     $jumlah = count($npm);
-    return view('mahasiswa', compact('npm','Nama', 'jumlah'));
+    return view('mahasiswa', compact('npm','jumlah','nama'));
 });
 
 Route::get('profile', function () {
