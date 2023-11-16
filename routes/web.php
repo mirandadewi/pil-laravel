@@ -67,11 +67,13 @@ Route::get('table', function () {
  });
 
  Route::get('array', function () {
-    //infinitife loop
-    $nilai_awal =1;
-    while ($nilai_awal <=5) {
-      echo 'Hello Laravel' . $nilai_awal. 'x<br>';
-      $nilai_awal++;
+    // //infinitife loop
+    // $nilai_awal =1;
+    // while ($nilai_awal <=5) {
+    //   echo 'Hello Laravel' . $nilai_awal. 'x<br>';
+    //   $nilai_awal++;
+    // }
+    for ($i = 0; $i < 10; $i++) {
+        echo 'Hello Laravel' . $i . 'x<br>';
     }
-
 });
