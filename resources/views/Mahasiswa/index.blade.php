@@ -34,8 +34,15 @@
   </div>
 </nav>
     <div class="container">
-    <h1 style="text-align: center">Halaman Mahasiswa</h1>
-    <br>
+
+    <div class="row">
+      <div class="col-sm-8">
+      <h1>Halaman Mahasiswa</h1>
+      </div>
+      <div class="col-sm-4 mt-2" style="text-align: right">
+        <a href="/Mahasiswa/create" class="btn btn-primary">Tambah Mahasiswa</a>
+      </div>
+    </div>
     {{-- //row = Baris
     //Col = Kolom --}}
     <div class ="row">
