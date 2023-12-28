@@ -33,38 +33,12 @@
     </div>
   </div>
 </nav>
-    <div class="container">
-
-    <div class="row">
-      <div class="col-sm-8">
+    <div class="container">                                                                                                                                                                                                                                      
       <h1>Halaman Tambah Mahasiswa</h1>
-      </div>
-      <div class="col-sm-4 mt-2" style="text-align: right">
-        <a href="/Mahasiswa" class="btn btn-secondary">Kembali</a>
-      </div>
-    </div>
-    {{-- //row = Baris
-    //Col = Kolom --}}
-    <div class ="row">
-      <div class="col-sm-6">
-        <h4>Tabel Mahasiswa</h4>
-        <table class="table table-danger table-sm table-hover table-striped table-border text-center">
-          <thead>
-        <tr>
-          <th>NPM</th>
-          <th>Nama Mahasiswa</th>
-          <th>Jenis Kelamin</th>
-          <th colspan="2"> Tempat Tanggal Lahir</th>
-        </tr>
-          </thead>
-          <tbody>
-        
-      </tbody>
-    </table>
-      </div>
-      <div class="col-sm-6">
+      <div class="row">
+      <div class="col-sm-12">
       <h4>Form Mahasiswa</h4>
-      <form action ="" method="GET">
+      <form action ="" method="POST">
         <div class="row">
         <div class="col-sm-6">
         <label for="">NPM</label>
@@ -89,9 +63,11 @@
           </div>
         </div>
         <div class="row mt-2">
-          <div class="col-sm-12">
-        <div class="form-group mt-2">
+          <div class="col-sm-6">
         <button class="btn btn-danger" style="width: 100%" type="submit">Simpan</button>
+      </div>
+      <div class="col-sm-6">
+        <a href="/Mahasiswa" class=" btn btn-secondary" style="width: 100%">Kembali</a>
       </div>
     </div>
   </div>
