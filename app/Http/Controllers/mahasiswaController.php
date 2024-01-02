@@ -13,8 +13,8 @@ class mahasiswaController extends Controller
      */
     public function index()
     {
-        //Halaman home mahasiswa
-        return view('Mahasiswa.index');
+        //Halaman Home Mahasiswa
+        return view('Mahasiswa/index');
     }
 
     /**
@@ -24,8 +24,8 @@ class mahasiswaController extends Controller
      */
     public function create()
     {
-        //halaman tambah mahasiswa
-        return view('Mahasiswa.create');
+        //Halaman tambah mahasiswa
+        return view('Mahasiswa/create');
     }
 
     /**
@@ -36,7 +36,7 @@ class mahasiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Halaman proses simpan tambah
     }
 
     /**
@@ -47,7 +47,7 @@ class mahasiswaController extends Controller
      */
     public function show($id)
     {
-        //Halaman detail
+        //halaman detail
     }
 
     /**
@@ -58,7 +58,7 @@ class mahasiswaController extends Controller
      */
     public function edit($id)
     {
-        //Halaman edit
+        //halaman edit
     }
 
     /**
@@ -70,7 +70,7 @@ class mahasiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //Halaman simpan edit
+        //proses simpan edit
     }
 
     /**
@@ -81,6 +81,6 @@ class mahasiswaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //proses hapus
     }
 }
