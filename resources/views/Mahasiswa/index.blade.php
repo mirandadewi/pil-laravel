@@ -40,6 +40,19 @@
       <h1>Halaman Mahasiswa</h1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12">
+        @if (Session::has('success'))
+        {{-- <div class="pt-3">
+          <div class="alert alert-success">
+            {{ Session::get('success')}}
+          </div>
+        </div>  --}}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Successfully!</strong>{{Session::get('success')}}.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        @endif
     {{-- //row = Baris
     //Col = Kolom --}}
     <div class ="row">
@@ -58,6 +71,8 @@
         
       </tbody>
     </table>
+      </div>
+    </div>
     <div class="col-sm-4 mt-2" style="text-align: right, widht:right">
       <a href="/Mahasiswa/create" class="btn btn-primary">Tambah Mahasiswa</a>
     </div>
