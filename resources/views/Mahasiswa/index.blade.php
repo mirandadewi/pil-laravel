@@ -61,13 +61,26 @@
         <table class="table table-danger table-sm table-hover table-striped table-border text-center">
           <thead>
         <tr>
+          <th>No</th>
           <th>NPM</th>
           <th>Nama Mahasiswa</th>
           <th>Jenis Kelamin</th>
-          <th colspan="2"> Tempat Tanggal Lahir</th>
+          <th>Tanggal Lahir</th>
+          <th>Alamat</th>
         </tr>
           </thead>
           <tbody>
+        @foreach ($Mahasiswa as $d)
+        <tr>
+          <td>{{ $no++}}</td>
+          <td>{{ $d->npm }}</td>
+          <td>{{ $d->nama }}</td>
+          <td>{{ $d->jk }}</td>
+          <td>{{ $d->tgl_lahir}}</td>
+          <td>{{ $d->alamat }}</td>
+        </tr>
+            
+        @endforeach
         
       </tbody>
     </table>
